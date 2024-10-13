@@ -1,0 +1,20 @@
+services:
+  emulatorsvh:
+    image: ${DOCKER_REGISTRY-}emulatorsvh
+    build:
+      context: .
+      dockerfile: EmulatorSVH/Dockerfile
+  rabbit:
+    container_name: emul-rabbitmq
+    image: rabbitmq:4.0.2-management-alpine
+    restart: always
+    hostname: localhost    
+    environment:
+      RABBITMQ_DEFAULT_USER: emulsvh
+      RABBITMQ_DEFAULT_PASS: emulsvh
+    volumes:
+      - ./rabbitmq/data/:/var/lib/rabbitmq/
+      - ./rabbitmq/log/:/var/log/rabbitmq/
+    ports:
+      - "5674:5674"
+      - "15672:15672"
