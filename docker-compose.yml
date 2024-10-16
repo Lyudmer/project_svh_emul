@@ -16,5 +16,38 @@ services:
       - ./rabbitmq/data/:/var/lib/rabbitmq/
       - ./rabbitmq/log/:/var/log/rabbitmq/
     ports:
-      - "5674:5674"
-      - "15672:15672"
+      - "5674:5672"
+      - "15674:15672"
+  postgres:
+    container_name: emulpostgres
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: "emulsvhdb"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "studadmin"
+    ports:
+       - "5434:5432"
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+    
+  mongo:
+    image: mongo:latest
+    container_name: emulmongo
+    restart: always
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: studadmin
+        MONGO_INITDB_ROOT_PASSWORD: studadmin
+    ports:
+       -  27019:27017
+ 
+volumes:
+  postgres-db:
+    driver: local
+  mongodb-data:
+    driver: local
+  rabbitmq_data:  
+  networks:
+  default:
+    name: emulsvhLocalNetwork 
+    external: true  

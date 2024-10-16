@@ -11,6 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmulatorSVH.Application", "
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4E466441-38F7-438B-BD32-946919205433}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmulatorSVH.Core", "EmulatorSVH.Core\EmulatorSVH.Core.csproj", "{94E8BE41-771E-4D0E-B05B-89F6DCC986AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmulatorSVH.DataAccess", "EmulatorSVH.DataAccess\EmulatorSVH.DataAccess.csproj", "{CF607248-1185-48C8-80C0-021B52BF24B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmulatorSVH.DocRecordCore", "EmulatorSVH.DocRecordCore\EmulatorSVH.DocRecordCore.csproj", "{CBACF682-7AFC-4049-AE98-5E72893C7710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmulatorSVH.DocRecordDataAccess", "EmulatorSVH.DocRecordDataAccess\EmulatorSVH.DocRecordDataAccess.csproj", "{5612CE13-7104-4296-B6F6-C5D2E4E2A317}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +41,22 @@ Global
 		{4E466441-38F7-438B-BD32-946919205433}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E466441-38F7-438B-BD32-946919205433}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E466441-38F7-438B-BD32-946919205433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E8BE41-771E-4D0E-B05B-89F6DCC986AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E8BE41-771E-4D0E-B05B-89F6DCC986AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E8BE41-771E-4D0E-B05B-89F6DCC986AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E8BE41-771E-4D0E-B05B-89F6DCC986AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF607248-1185-48C8-80C0-021B52BF24B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF607248-1185-48C8-80C0-021B52BF24B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF607248-1185-48C8-80C0-021B52BF24B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF607248-1185-48C8-80C0-021B52BF24B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBACF682-7AFC-4049-AE98-5E72893C7710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBACF682-7AFC-4049-AE98-5E72893C7710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBACF682-7AFC-4049-AE98-5E72893C7710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBACF682-7AFC-4049-AE98-5E72893C7710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5612CE13-7104-4296-B6F6-C5D2E4E2A317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5612CE13-7104-4296-B6F6-C5D2E4E2A317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5612CE13-7104-4296-B6F6-C5D2E4E2A317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5612CE13-7104-4296-B6F6-C5D2E4E2A317}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
